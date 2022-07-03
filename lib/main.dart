@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_kit/coffee_app/screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,9 +10,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter UI Kit',
-      home: Scaffold(
-        body: Center(child: Text("Initial Commit"),),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: CoffeeAppHomeScreen()
     );
   }
 }
