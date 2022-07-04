@@ -2,15 +2,6 @@
 
 A simple collection of widgets and screens for flutter applications.
 
-## Getting Started
+## 1. Coffee App UI  
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Coffee App UI](https://raw.githubusercontent.com/chandansgowda/flutter_ui_kit/master/lib/coffee_app/home_screen_pic.png)
