@@ -4,6 +4,7 @@ import 'package:flutter_ui_kit/coffee_app/widgets/coffee_type_list_item.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CoffeeAppHomeScreen extends StatelessWidget {
+  static const routeName='/coffee-app-home-screen';
   const CoffeeAppHomeScreen({Key? key}) : super(key: key);
 
   @override
