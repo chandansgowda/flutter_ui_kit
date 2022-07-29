@@ -20,4 +20,4 @@ Any feedback would be appreciated. Create a new feedback issue.
 
 ## 1. Coffee App UI  
 
-![Coffee App UI](https://raw.githubusercontent.com/chandansgowda/flutter_ui_kit/master/lib/coffee_app/home_screen_pic.png)
+![Coffee App UI](https://raw.githubusercontent.com/chandansgowda/flutter_ui_kit/master/flutter_ui_kit/lib/coffee_app/home_screen_pic.png)
