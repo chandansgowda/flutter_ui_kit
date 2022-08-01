@@ -3,6 +3,7 @@ import 'package:flutter_ui_kit/crypto_app/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CryptoAppHomeScreen extends StatelessWidget {
+  static const routeName='/crypto-app-home-screen';
   @override
   Widget build(BuildContext context) {
     return Theme(
