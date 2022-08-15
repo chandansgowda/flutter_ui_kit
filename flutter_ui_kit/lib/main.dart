@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         CryptoAppHomeScreen.routeName:(ctx)=>CryptoAppHomeScreen(),
         FurnitureAppHomeScreen.routeName:(ctx)=>FurnitureAppHomeScreen(),
       },
-      initialRoute: FurnitureAppHomeScreen.routeName,
+      initialRoute: '/',
     );
   }
 }

@@ -8,6 +8,7 @@ class FurnitureAppHomeScreen extends StatelessWidget {
     return Theme(
       data: ThemeData(brightness: Brightness.light, primarySwatch: Colors.blue),
       child: Scaffold(
+        backgroundColor: Color.fromRGBO(4, 79, 157, 100),
         body: Column(
           children: [
             Row(
