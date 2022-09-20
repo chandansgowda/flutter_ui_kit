@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_kit/coffee_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/crypto_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/furniture_app/screens/home_screen.dart';
+import 'package:flutter_ui_kit/music_app/screens/music_app_home_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 List<Map<String, String>> AppPaths = [
   {'name': "Coffee App", 'path': CoffeeAppHomeScreen.routeName},
   {'name': "Crypto App", 'path': CryptoAppHomeScreen.routeName},
   {'name': "Furniture App", 'path': FurnitureAppHomeScreen.routeName},
+  {'name':"Music App",'path':MusicAppHomeScreen.routeName}
 ];
 
 class HomeScreen extends StatelessWidget {

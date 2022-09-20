@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_kit/furniture_app/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FurnitureAppHomeScreen extends StatelessWidget {
@@ -10,7 +9,7 @@ class FurnitureAppHomeScreen extends StatelessWidget {
     return Theme(
       data: ThemeData(brightness: Brightness.light, primarySwatch: Colors.blue),
       child: Scaffold(
-        backgroundColor: kPrimaryColor,
+        backgroundColor: Colors.blueAccent,
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25),
           child: Column(

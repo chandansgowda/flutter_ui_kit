@@ -46,6 +46,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  percent_indicator: ^4.2.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -73,6 +74,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/music_app/Roboto-Regular.ttf
+
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/music_app/Pacifico-Regular.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
