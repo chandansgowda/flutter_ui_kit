@@ -35,9 +35,12 @@ Any feedback would be appreciated. Create a new feedback issue.
 
 # Completed Flutter Templates
 
+
 ## 1. Coffee App UI  
 
-![Coffee App UI](https://raw.githubusercontent.com/chandansgowda/flutter_ui_kit/master/flutter_ui_kit/lib/coffee_app/home_screen_pic.png)
+![image](https://user-images.githubusercontent.com/76849575/197053458-86c04c0e-db0b-48ee-bd92-2157b1121545.png)
+
+
 
 # Contributors:
 <br>
