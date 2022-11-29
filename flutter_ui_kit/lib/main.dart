@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_kit/coffee_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/crypto_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/furniture_app/screens/home_screen.dart';
+import 'package:flutter_ui_kit/finance_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/home.dart';
 import 'package:flutter_ui_kit/music_app/screens/music_app_home_screen.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         CryptoAppHomeScreen.routeName:(ctx)=>CryptoAppHomeScreen(),
         FurnitureAppHomeScreen.routeName:(ctx)=>FurnitureAppHomeScreen(),
         MusicAppHomeScreen.routeName:(ctx)=>MusicAppHomeScreen(),
+        FinanceAppHomeScreen.routeName:(ctx)=>FinanceAppHomeScreen()
       },
       initialRoute: '/',
     );
