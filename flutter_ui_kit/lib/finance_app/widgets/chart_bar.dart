@@ -1,5 +1,6 @@
-import 'package:finance_ui/widgets/chart_bar_items.dart';
 import 'package:flutter/material.dart';
+
+import 'chart_bar_items.dart';
 class ChartBar extends StatelessWidget {
   const ChartBar({Key? key}) : super(key: key);
 

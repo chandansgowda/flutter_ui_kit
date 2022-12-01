@@ -1,7 +1,8 @@
-import 'package:finance_ui/widgets/recent_transactions_card.dart';
-import 'package:finance_ui/screens/transaction_screen.dart';
-import 'package:finance_ui/widgets/home_screen_option_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_kit/finance_app/screens/transaction_screen.dart';
+
+import '../widgets/home_screen_option_button.dart';
+import '../widgets/recent_transactions_card.dart';
 
 class FinanceAppHomeScreen extends StatefulWidget {
   const FinanceAppHomeScreen({Key? key}) : super(key: key);

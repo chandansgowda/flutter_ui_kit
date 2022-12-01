@@ -1,0 +1,7 @@
+#Thu Dec 01 20:10:46 IST 2022
+base.1=/Users/chandansgowda/Documents/FlutterDev/projects/flutter_ui_kit/flutter_ui_kit/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+path.1=classes2.dex
+base.0=/Users/chandansgowda/Documents/FlutterDev/projects/flutter_ui_kit/flutter_ui_kit/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

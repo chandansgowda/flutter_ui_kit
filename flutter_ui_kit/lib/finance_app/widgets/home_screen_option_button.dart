@@ -1,5 +1,6 @@
-import 'package:finance_ui/screens/new_transaction_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../screens/new_transaction_screen.dart';
 class HomeScreenOptionButton extends StatelessWidget {
   final IconData icon;
   final Text title;
