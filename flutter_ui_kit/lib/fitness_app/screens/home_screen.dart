@@ -1,12 +1,18 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_kit/fitness_app/Categories%20scroll.dart';
 import 'package:flutter_ui_kit/fitness_app/Pallete.dart';
 import 'package:flutter_ui_kit/fitness_app/navbar.dart';
+import 'package:flutter_ui_kit/fitness_app/trainers.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+
 
 class FitnessApp extends StatelessWidget {
-  static const routeName='/fitness-app-home-screen';
-  const FitnessApp({super.key});
+  static const routeName = '/fitness-app-home-screen';
+
+  const FitnessApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +24,8 @@ class FitnessApp extends StatelessWidget {
         leading: Padding(
           padding: const EdgeInsets.only(left: 24),
           child: CircleAvatar(
-            backgroundImage: NetworkImage('https://w0.peakpx.com/wallpaper/170/826/HD-wallpaper-spider-black-blue-game-hero-logo-movie-spiderman-super-super-hero.jpg'),
+            backgroundImage: NetworkImage(
+                'https://w0.peakpx.com/wallpaper/170/826/HD-wallpaper-spider-black-blue-game-hero-logo-movie-spiderman-super-super-hero.jpg'),
             radius: 24,
           ),
         ),
@@ -48,9 +55,8 @@ class FitnessApp extends StatelessWidget {
             padding: const EdgeInsets.only(right: 24),
             child: CircleAvatar(
               backgroundColor: Colors.white,
-
               child: Icon(
-                Icons.notifications,
+                MdiIcons.bell,
                 size: 24,
                 color: Color(0xFF232323),
               ),
@@ -58,22 +64,117 @@ class FitnessApp extends StatelessWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            TrainerList(),
-            TrainerList(),
-            TrainerList(),
-          ],
-        ),
+      body: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 24, right: 24),
+            child: Column(
+              children: [
+                //Elano Ratio
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      TrainerList(),
+                      SizedBox(width: 7),
+                      TrainerList(),
+                      SizedBox(width: 7),
+                      TrainerList(),
+                    ],
+                  ),
+                ),
+                //All Categories
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // POSTS
+                      ProfileScreenTabs(text: "All Categories", isSelected: true),
+                      // CONTRIBUTIONS
+                      ProfileScreenTabs(text: "Essentially"),
+                      // SAVED
+                      ProfileScreenTabs(text: "FitMartial"),
+                      // COMMENTS
+                      ProfileScreenTabs(text: "Yoga"),
+                      // MEDIA
+                      ProfileScreenTabs(text: "Gymnastics"),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 15),
+                //Top Trainer & See All
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Top Trainer",
+                      style: GoogleFonts.poppins(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "See All",
+                          style: GoogleFonts.poppins(
+                            color: Palette.selectednavicons,
+                          ),
+                        ),
+                        SizedBox(width: 3),
+                        Icon(
+                          Icons.keyboard_arrow_right,
+                          color: Palette.selectednavicons,
+                          size: 24,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                TrainersView(),
+
+
+                //All Trainers & See All
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "All Trainers",
+                      style: GoogleFonts.poppins(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "See All",
+                          style: GoogleFonts.poppins(
+                            color: Palette.selectednavicons,
+                          ),
+                        ),
+                        SizedBox(width: 3),
+                        Icon(
+                          Icons.keyboard_arrow_right,
+                          color: Palette.selectednavicons,
+                          size: 24,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNav(),
-
     );
   }
 }
+
 
 //Trainer List
 class TrainerList extends StatelessWidget {
@@ -82,7 +183,7 @@ class TrainerList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.only(top: 24,bottom: 24),
       child: Container(
         width: 340,
         height: 110,
@@ -139,7 +240,7 @@ class TrainerList extends StatelessWidget {
                           "05",
                           style: GoogleFonts.poppins(
                             fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w600,
                             color: Palette.backgroundColor,
                           ),
                         ),
@@ -176,7 +277,7 @@ class TrainerList extends StatelessWidget {
                           "10",
                           style: GoogleFonts.poppins(
                             fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w600,
                             color: Palette.backgroundColor,
                           ),
                         ),
