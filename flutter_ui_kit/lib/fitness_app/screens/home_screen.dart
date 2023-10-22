@@ -2,8 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_kit/fitness_app/Categories%20scroll.dart';
 import 'package:flutter_ui_kit/fitness_app/Pallete.dart';
+import 'package:flutter_ui_kit/fitness_app/all_trainers.dart';
 import 'package:flutter_ui_kit/fitness_app/navbar.dart';
-import 'package:flutter_ui_kit/fitness_app/trainers.dart';
+import 'package:flutter_ui_kit/fitness_app/top_trainers.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -165,6 +166,7 @@ class FitnessApp extends StatelessWidget {
                     ),
                   ],
                 ),
+                AllTrainers(),
               ],
             ),
           ),
@@ -197,7 +199,8 @@ class TrainerList extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 12),
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/fitness_app/your_image.png'),
+                backgroundImage: NetworkImage(
+                  'https://i.pinimg.com/564x/f9/a7/a3/f9a7a30e3f6cada77cbd30f47f5a430f.jpg'),
                 radius: 24,
               ),
             ),

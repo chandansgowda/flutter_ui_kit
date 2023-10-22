@@ -7,4 +7,5 @@ class Palette {
   static const Color navicons = Color(0xFF969696);
   static const Color backgroundColor = Color(0xFFF5F5F5);
   static const Color selectednavicons = Color(0xFFFF7D58);
+  static const Color colo = Color(0xFF414141);
 }
