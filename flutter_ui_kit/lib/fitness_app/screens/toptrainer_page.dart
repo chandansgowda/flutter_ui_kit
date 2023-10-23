@@ -53,48 +53,45 @@ class TopTrainerPage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 24),
-        child: ListView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Top Trainer",
-            style: GoogleFonts.poppins(
-              color: Palette.accentColor,
-              fontSize: 16,
-              fontWeight: FontWeight.w500
-            ),),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  ListofTrainers(),
-                  ListofTrainers(),
-                  ListofTrainers(),
-                  ListofTrainers(),
-                ],
-              ),
+          Text(
+          "Top Trainer",
+          style: GoogleFonts.poppins(
+            color: Palette.accentColor,
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              ListofTrainers(),
+              ListofTrainers(),
+              ListofTrainers(),
+              ListofTrainers(),
+            ],
+          ),
+        ),
+        Text(
+          "All Yoga Trainer",
+          style: GoogleFonts.poppins(
+            fontSize: 24,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              AllYogaTrainers(),
+              AllYogaTrainers(),
+              AllYogaTrainers(),
+            ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "All Yoga Trainer",
-                  style: GoogleFonts.poppins(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Row(
-                    children: [
-                      AllYogaTrainers(),
-                      AllYogaTrainers(),
-                      AllYogaTrainers(),
-                    ],
-                  ),
-                )
-              ],
-            ),
-          ],
+        )],
         ),
       ),
     );
