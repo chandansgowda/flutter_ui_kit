@@ -52,7 +52,7 @@ class TopTrainerPage extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 24),
+        padding: const EdgeInsets.only(left: 24,right: 24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -64,6 +64,7 @@ class TopTrainerPage extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
+        SizedBox(height: 10,),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
@@ -75,6 +76,7 @@ class TopTrainerPage extends StatelessWidget {
             ],
           ),
         ),
+        SizedBox(height: 10,),
         Text(
           "All Yoga Trainer",
           style: GoogleFonts.poppins(
@@ -82,12 +84,15 @@ class TopTrainerPage extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
+            SizedBox(height: 10,),
         SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
               AllYogaTrainers(),
+              SizedBox(height: 10,),
               AllYogaTrainers(),
+              SizedBox(height: 10,),
               AllYogaTrainers(),
             ],
             ),
@@ -134,7 +139,59 @@ class ListofTrainers extends StatelessWidget {
         )
         ],
       ),
-      child: Text("Meewne"),
+      child: Column(mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircleAvatar(
+            radius: 25,
+            backgroundImage: NetworkImage("https://i.pinimg.com/564x/e9/06/6e/e9066e3283dc73f523a75e67f6bde7ae.jpg"),
+          ),
+          SizedBox(height: 5,),
+          Text("Batrik Rosea",
+              style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12
+              )),
+          Text("Yoga Trainer",
+              style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.normal,
+                  fontSize: 10
+              )),
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.star, color: Colors.amber, size: 14),
+              Icon(Icons.star, color: Colors.amber, size: 14),
+              Icon(Icons.star, color: Colors.amber, size: 14),
+              Icon(Icons.star, color: Colors.amber, size: 14),
+              Icon(Icons.star_border_outlined, color: Colors.amber, size: 14),
+            ],
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 4),
+            width: 110,
+            height: 40,
+            decoration: BoxDecoration(
+              color: Color(0xFFF2F2F9),
+              borderRadius: BorderRadius.circular(10)
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text("\$25.00",style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 12
+                  ),),
+                  Text("Per Minutes",
+                      style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 10
+                      )),
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
@@ -148,7 +205,7 @@ class AllYogaTrainers extends StatelessWidget {
       width: double.infinity,
       height: 90,
       decoration: BoxDecoration(
-        color: Colors.blue,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(12),
         boxShadow: [BoxShadow(
           color: Color(0xFFF1F1F1),
