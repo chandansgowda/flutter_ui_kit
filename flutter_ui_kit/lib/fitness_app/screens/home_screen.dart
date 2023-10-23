@@ -1,10 +1,10 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_kit/fitness_app/Categories%20scroll.dart';
-import 'package:flutter_ui_kit/fitness_app/Pallete.dart';
-import 'package:flutter_ui_kit/fitness_app/all_trainers.dart';
-import 'package:flutter_ui_kit/fitness_app/navbar.dart';
-import 'package:flutter_ui_kit/fitness_app/top_trainers.dart';
+import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/Categories%20scroll.dart';
+import 'package:flutter_ui_kit/fitness_app/consts/Pallete.dart';
+import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/all_trainers.dart';
+import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/navbar.dart';
+import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/top_trainers.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -17,7 +17,7 @@ class FitnessApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -54,14 +54,25 @@ class FitnessApp extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 24),
-            child: CircleAvatar(
-              backgroundColor: Colors.white,
-              child: Icon(
-                MdiIcons.bell,
-                size: 24,
-                color: Color(0xFF232323),
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Color(0xFFEEEEEE),
+                  width: 1/2,
+                ),
               ),
+              child: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Icon(
+                  MdiIcons.bell,
+                  size: 24,
+                  color: Palette.accentColor,
+                ),
+              ),
+
             ),
+
           ),
         ],
       ),
@@ -135,9 +146,7 @@ class FitnessApp extends StatelessWidget {
                   ],
                 ),
                 TrainersView(),
-
-
-                //All Trainers & See All
+                SizedBox(height: 12,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
