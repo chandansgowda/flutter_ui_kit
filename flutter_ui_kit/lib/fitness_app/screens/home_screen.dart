@@ -5,6 +5,7 @@ import 'package:flutter_ui_kit/fitness_app/consts/Pallete.dart';
 import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/all_trainers.dart';
 import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/navbar.dart';
 import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/top_trainers.dart';
+import 'package:flutter_ui_kit/fitness_app/screens/toptrainer_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -23,11 +24,11 @@ class FitnessApp extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         leading: Padding(
-          padding: const EdgeInsets.only(left: 24),
+          padding: const EdgeInsets.only(left:24),
           child: CircleAvatar(
             backgroundImage: NetworkImage(
                 'https://w0.peakpx.com/wallpaper/170/826/HD-wallpaper-spider-black-blue-game-hero-logo-movie-spiderman-super-super-hero.jpg'),
-            radius: 24,
+            radius: 68,
           ),
         ),
         title: Column(
@@ -129,12 +130,22 @@ class FitnessApp extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Text(
-                          "See All",
-                          style: GoogleFonts.poppins(
-                            color: Palette.selectednavicons,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                              return TopTrainerPage(); // Navigate to the TopTrainers page
+                            }));
+                          },
+                          child: InkWell(
+                            child: Text(
+                              "See All",
+                              style: GoogleFonts.poppins(
+                                color: Palette.selectednavicons,
+                              ),
+                            ),
                           ),
                         ),
+
                         SizedBox(width: 3),
                         Icon(
                           Icons.keyboard_arrow_right,

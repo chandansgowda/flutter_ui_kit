@@ -83,7 +83,7 @@ class TrainerScreen extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: 'Search your trainer',hintStyle: GoogleFonts.poppins(
-fontSize: 12
+                          fontSize: 12
                         ),
                           border: InputBorder.none,
                           contentPadding: EdgeInsets.symmetric(horizontal: 10),

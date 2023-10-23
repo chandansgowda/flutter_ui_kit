@@ -82,7 +82,8 @@ class AllTrainersList extends StatelessWidget {
             blurRadius: 4,
             offset: Offset(0, 4),
             spreadRadius: 0,
-          )],
+          )
+          ],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
