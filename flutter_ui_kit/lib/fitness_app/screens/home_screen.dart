@@ -192,7 +192,7 @@ class FitnessApp extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNav(),
+      bottomNavigationBar: BottomNav(currentIndex: 0,),
     );
   }
 }

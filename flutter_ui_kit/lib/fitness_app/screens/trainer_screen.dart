@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_kit/fitness_app/consts/Pallete.dart';
 import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/navbar.dart';
+import 'package:flutter_ui_kit/fitness_app/screens/toptrainer_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -107,8 +108,19 @@ class TrainerScreen extends StatelessWidget {
                   children: [
                     Categories(name: "FitMartial", specialization: "22 Trainer",
                         imageUrl: "https://i.pinimg.com/564x/04/69/77/0469770c4ecc7fa8e9d5232e08f8ff40.jpg"),
-                    Categories(name: "Yoga", specialization: "45 Trainer",
-                        imageUrl: "https://i.pinimg.com/564x/f4/6c/c4/f46cc436a7a82a403aebf5c27ec02789.jpg"),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                          return TopTrainerPage();
+                        }));
+                      },
+                      child: Categories(
+                        name: "Yoga",
+                        specialization: "45 Trainer",
+                        imageUrl: "https://i.pinimg.com/564x/f4/6c/c4/f46cc436a7a82a403aebf5c27ec02789.jpg",
+                      ),
+                    ),
+
 
                   ],
                 ),
@@ -138,7 +150,7 @@ class TrainerScreen extends StatelessWidget {
 
         ],
       ),
-      bottomNavigationBar: BottomNav(),
+      bottomNavigationBar: BottomNav(currentIndex: 1,),
     );
   }
 }
@@ -147,11 +159,13 @@ class Categories extends StatelessWidget {
   final String specialization;
   final String imageUrl;
 
+
   const Categories({
     Key? key,
     required this.name,
     required this.specialization,
     required this.imageUrl,
+
   }) : super(key: key);
 
   @override

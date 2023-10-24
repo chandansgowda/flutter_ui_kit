@@ -6,13 +6,48 @@ import 'package:simple_icons/simple_icons.dart';
 import '../screens/home_screen.dart';
 import '../screens/trainer_screen.dart';
 
-class BottomNav extends StatelessWidget {
-  const BottomNav({Key? key});
+class BottomNav extends StatefulWidget {
+  final int currentIndex; // Pass the current index as a parameter
+
+  const BottomNav({Key? key, required this.currentIndex}) : super(key: key);
+
+  @override
+  _BottomNavState createState() => _BottomNavState();
+}
+
+class _BottomNavState extends State<BottomNav> {
+  int _selectedIndex = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    // Set the initial index based on the provided currentIndex
+    _selectedIndex = widget.currentIndex;
+  }
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+
+    if (index == 0) {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) {
+        return FitnessApp();
+      }));
+    } else if (index == 1) {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) {
+        return TrainerScreen();
+      }));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       elevation: 0,
+      selectedItemColor: Palette.selectednavicons, // Selected icon color
+      unselectedItemColor: Palette.navicons, // Unselected icon color
+      currentIndex: _selectedIndex, // Set the current index
       items: [
         BottomNavigationBarItem(
           icon: Icon(SimpleIcons.homeadvisor),
@@ -31,27 +66,9 @@ class BottomNav extends StatelessWidget {
           label: 'Profile',
         ),
       ],
-      selectedItemColor: Palette.selectednavicons,
-      unselectedItemColor: Palette.navicons,
       showSelectedLabels: true,
       showUnselectedLabels: true,
-      onTap: (int index) {
-        if (index == 0) {
-          Navigator.of(context).pushReplacement(PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) => FitnessApp(),
-            transitionsBuilder: (context, animation, secondaryAnimation, child) {
-              return child;
-            },
-          ));
-        } else if (index == 1) {
-          Navigator.of(context).pushReplacement(PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) => TrainerScreen(),
-            transitionsBuilder: (context, animation, secondaryAnimation, child) {
-              return child;
-            },
-          ));
-        }
-      },
+      onTap: _onItemTapped,
     );
   }
 }

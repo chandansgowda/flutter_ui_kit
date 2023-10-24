@@ -51,53 +51,63 @@ class TopTrainerPage extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(left: 24,right: 24),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-          Text(
-          "Top Trainer",
-          style: GoogleFonts.poppins(
-            color: Palette.accentColor,
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        SizedBox(height: 10,),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              ListofTrainers(),
-              ListofTrainers(),
-              ListofTrainers(),
-              ListofTrainers(),
-            ],
-          ),
-        ),
-        SizedBox(height: 10,),
-        Text(
-          "All Yoga Trainer",
-          style: GoogleFonts.poppins(
-            fontSize: 24,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-            SizedBox(height: 10,),
-        SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            children: [
-              AllYogaTrainers(),
-              SizedBox(height: 10,),
-              AllYogaTrainers(),
-              SizedBox(height: 10,),
-              AllYogaTrainers(),
-            ],
+      body: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 24,right: 24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Top Trainer",
+                  style: GoogleFonts.poppins(
+                    color: Palette.accentColor,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                SizedBox(height: 10,),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      ListofTrainers(name: "Bartik Rosea",money: "\$25",specialization: "Yoga Trainer",img:"https://i.pinimg.com/564x/05/ad/d5/05add5613d6d12bfdb7fb70c343c0328.jpg"),
+                      ListofTrainers(name: "Elena Ratio",money: "\$15",specialization: "Fitness Trainer",img:"https://i.pinimg.com/564x/03/55/11/0355119fd1b7d8847d82163e26ffb5bc.jpg"),
+                      ListofTrainers(name:"Eon Tenison",money: "\$15",specialization: "Yoga Trainer",img:"https://i.pinimg.com/564x/5f/21/b7/5f21b7e584f46751be06eb715d6edd5a.jpg"),
+                      ListofTrainers(name: "Emiliano",money: "\$35",specialization: "Ushu Trainer",img:"https://i.pinimg.com/564x/51/d9/31/51d931334378b95aa90b255f20530278.jpg"),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 10,),
+                Text(
+                  "All Yoga Trainer",
+                  style: GoogleFonts.poppins(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                SizedBox(height: 10,),
+                SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      AllYogaTrainers(money: "\$12.00",desc: "A uique strength and flexibility\ntraining with Involved...",
+                          imgUrl: "https://i.pinimg.com/564x/a0/d7/00/a0d700fd39679c5da92ae5e7b80c97dd.jpg",namee: "Warren Craig",),
+                      SizedBox(height: 10,),
+                      AllYogaTrainers(money: "\$22.00",desc: "A uique strength and flexibility\ntraining with Involved...",
+                        imgUrl: "https://i.pinimg.com/736x/8c/4a/51/8c4a51e005629a084505649079b0a949.jpg",namee: "Zendaya",),
+                      SizedBox(height: 10,),
+                      AllYogaTrainers(money: "\$12.00",desc: "A uique strength and flexibility\ntraining with Involved...",
+                        imgUrl: "https://i.pinimg.com/564x/e8/df/01/e8df017b8459c3fdc951da06ce0be115.jpg",namee: "Emma Watson",),
+                      SizedBox(height: 10,),
+                      AllYogaTrainers(money: "\$25.00",desc: "A uique strength and flexibility\ntraining with Involved...",
+                        imgUrl: "https://i.pinimg.com/564x/54/38/68/543868e17fd962899bc2a2706452dec7.jpg",namee: "John Cena",),
+                    ],
+                  ),
+                )],
             ),
-        )],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -105,7 +115,19 @@ class TopTrainerPage extends StatelessWidget {
 
 
 class ListofTrainers extends StatelessWidget {
-  const ListofTrainers({super.key});
+  final String name;
+  final String money;
+  final String specialization;
+  final String img;
+
+  const ListofTrainers({
+    Key? key,
+    required this.name,
+    required this.money,
+    required this.specialization,
+    required this.img,
+
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -116,47 +138,57 @@ class ListofTrainers extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        boxShadow: [BoxShadow(
-          color: Color(0xFFF1F1F1),
-          blurRadius: 4,
-          offset: Offset(0, -2),
-          spreadRadius: 0,
-        ),BoxShadow(
-          color: Color(0x11F1F1F1),
-          blurRadius: 28,
-          offset: Offset(0, 4),
-          spreadRadius: 0,
-        ),BoxShadow(
-          color: Color(0xFFF1F1F1),
-          blurRadius: 4,
-          offset: Offset(0, 4),
-          spreadRadius: 0,
-        ),BoxShadow(
-          color: Color(0xFFF1F1F1),
-          blurRadius: 4,
-          offset: Offset(0, 4),
-          spreadRadius: 0,
-        )
+        boxShadow: [
+          BoxShadow(
+            color: Color(0xFFF1F1F1),
+            blurRadius: 4,
+            offset: Offset(0, -2),
+            spreadRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0x11F1F1F1),
+            blurRadius: 28,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0xFFF1F1F1),
+            blurRadius: 4,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0xFFF1F1F1),
+            blurRadius: 4,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          ),
         ],
       ),
-      child: Column(mainAxisAlignment: MainAxisAlignment.center,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CircleAvatar(
             radius: 25,
-            backgroundImage: NetworkImage("https://i.pinimg.com/564x/e9/06/6e/e9066e3283dc73f523a75e67f6bde7ae.jpg"),
+            backgroundImage: NetworkImage(img),
           ),
           SizedBox(height: 5,),
-          Text("Batrik Rosea",
-              style: GoogleFonts.poppins(
-                  fontWeight: FontWeight.w400,
-                  fontSize: 12
-              )),
-          Text("Yoga Trainer",
-              style: GoogleFonts.poppins(
-                  fontWeight: FontWeight.normal,
-                  fontSize: 10
-              )),
-          Row(mainAxisAlignment: MainAxisAlignment.center,
+          Text(
+            name,
+            style: GoogleFonts.poppins(
+              fontWeight: FontWeight.w400,
+              fontSize: 12,
+            ),
+          ),
+          Text(
+            specialization,
+            style: GoogleFonts.poppins(
+              fontWeight: FontWeight.normal,
+              fontSize: 10,
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(Icons.star, color: Colors.amber, size: 14),
               Icon(Icons.star, color: Colors.amber, size: 14),
@@ -171,20 +203,24 @@ class ListofTrainers extends StatelessWidget {
             height: 40,
             decoration: BoxDecoration(
               color: Color(0xFFF2F2F9),
-              borderRadius: BorderRadius.circular(10)
+              borderRadius: BorderRadius.circular(10),
             ),
             child: Padding(
               padding: const EdgeInsets.all(3.0),
-              child: Column(crossAxisAlignment: CrossAxisAlignment.center,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("\$25.00",style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 12
-                  ),),
+                  Text(
+                    money,
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 12,
+                    ),
+                  ),
                   Text("Per Minutes",
                       style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.normal,
-                          fontSize: 10
+                        fontWeight: FontWeight.normal,
+                        fontSize: 10,
                       )),
                 ],
               ),
@@ -196,42 +232,233 @@ class ListofTrainers extends StatelessWidget {
   }
 }
 
+
+
 class AllYogaTrainers extends StatelessWidget {
-  const AllYogaTrainers({super.key});
+  final String imgUrl;
+  final String namee;
+  final String desc;
+  final String money;
+  const AllYogaTrainers({Key? key,
+  required this.imgUrl,
+  required this.namee,
+  required this.desc,
+  required this.money,
+
+
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 90,
+      height: 150,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        boxShadow: [BoxShadow(
-          color: Color(0xFFF1F1F1),
-          blurRadius: 4,
-          offset: Offset(0, -2),
-          spreadRadius: 0,
-        ),BoxShadow(
-          color: Color(0x11F1F1F1),
-          blurRadius: 28,
-          offset: Offset(0, 4),
-          spreadRadius: 0,
-        ),BoxShadow(
-          color: Color(0xFFF1F1F1),
-          blurRadius: 4,
-          offset: Offset(0, 4),
-          spreadRadius: 0,
-        ),BoxShadow(
-          color: Color(0xFFF1F1F1),
-          blurRadius: 4,
-          offset: Offset(0, 4),
-          spreadRadius: 0,
-        )
+        boxShadow: [
+          BoxShadow(
+            color: Color(0xFFF1F1F1),
+            blurRadius: 4,
+            offset: Offset(0, -2),
+            spreadRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0x11F1F1F1),
+            blurRadius: 28,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0xFFF1F1F1),
+            blurRadius: 4,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0xFFF1F1F1),
+            blurRadius: 4,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          ),
         ],
       ),
-      child: Text("Hue Hue"),
+      child: Column(
+        children: [
+          Row(
+            children: <Widget>[
+              // Circular Image
+              Container(
+                width: 60,
+                height: 60,
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                    image: NetworkImage(imgUrl),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: Stack(
+                  children: [
+                    // Circular Image (Already in the Container)
+                    Positioned(
+                      bottom: -7,
+                      right: 0,
+                      left: 0,
+                      child: Container(
+                        width: 60,
+                        height: 20,  // Adjust this height as needed
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color(0xFFF1F1F1),
+                              blurRadius: 4,
+                              offset: Offset(0, 4),
+                              spreadRadius: 0,
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.star, color: Colors.amber, size: 9),
+                            Icon(Icons.star, color: Colors.amber, size: 9),
+                            Icon(Icons.star, color: Colors.amber, size: 9),
+                            Icon(Icons.star, color: Colors.amber, size: 9),
+                            Icon(Icons.star_border, color: Colors.amber, size: 9),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    // Name and Share Icon
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Text(
+                          namee,
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                          ),
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.share),
+                          onPressed: () {
+                            // Handle share action here
+                          },
+                        ),
+                      ],
+                    ),
+                    Text(
+                      "Yoga Trainer",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Text(
+                      desc,
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              // Rating Stars
+
+            ],
+          ),
+          Row(mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.only(left:10),
+                height: 45,
+                width: 80,
+                decoration: BoxDecoration(
+                  color: Color(0xFFF2F2F9),
+                  borderRadius: BorderRadius.circular(10)
+
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(money,style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 12
+                      ),),
+                      Text("Per Minutes",
+                          style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 10
+                          )),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.all(5),
+                height: 45,
+                width: 140,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(width: 1/2,color: Color(0xFFEAEAEA))
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(Icons.wechat_sharp, color: Palette.textblack, size: 20),
+                    Text("Message", style: GoogleFonts.poppins(fontSize: 12, color: Palette.accentColor)),
+                    Container(
+                      width: 1,
+                      height: 30,
+                      color: Color(0xFFEAEAEA),
+                      margin: EdgeInsets.symmetric(vertical: 7),
+                    ),
+                    Icon(Icons.call, color: Palette.textblack, size: 20),
+                    Text("Call", style: GoogleFonts.poppins(fontSize: 12, color: Palette.accentColor)),
+                  ],
+                ),
+              ),
+
+              Container(
+                margin: EdgeInsets.all(5),
+                height: 45,
+                width: 90,
+                decoration: BoxDecoration(
+                  color: Palette.selectednavicons,
+                  borderRadius: BorderRadius.circular(10)
+
+                ),
+                child: Center(
+                  child: Text("Join",
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white
+                  ),),
+                ),
+              ),
+            ],
+          )
+        ],
+      ),
+
     );
   }
 }
+
+
+
 
