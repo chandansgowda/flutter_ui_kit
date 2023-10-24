@@ -58,13 +58,9 @@ Any feedback would be appreciated. Create a new feedback issue.
 
 
 #FITNESS APP
+---------------------------
 #reference
 ![image](https://github.com/Redvey/flutter_ui_kit/assets/128305006/5da06312-ca3f-4041-92d2-7ee8c28a0c00)                My Project: https://github.com/Redvey/flutter_ui_kit/assets/128305006/5121f6c7-56c8-44de-9889-dea58d4769e9
-
-
-
-
-
 This Flutter application is designed for a fitness-focused mobile app and features a Trainer Screen. The app offers a variety of functionalities and components to enhance the fitness experience. Here's a brief overview of the key features:
 
 Customized AppBar: The app includes a sleek and transparent app bar with a user profile picture and an integrated notification bell icon.
