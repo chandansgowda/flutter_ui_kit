@@ -59,7 +59,9 @@ Any feedback would be appreciated. Create a new feedback issue.
 
 #FITNESS APP
 #reference
-![image](https://github.com/Redvey/flutter_ui_kit/assets/128305006/5da06312-ca3f-4041-92d2-7ee8c28a0c00)                My Project: https://github.com/Redvey/flutter_ui_kit/assets/128305006/a356e5c0-9821-46b6-a96b-a997738bc7bc
+![image](https://github.com/Redvey/flutter_ui_kit/assets/128305006/5da06312-ca3f-4041-92d2-7ee8c28a0c00)                My Project: https://github.com/Redvey/flutter_ui_kit/assets/128305006/5121f6c7-56c8-44de-9889-dea58d4769e9
+
+
 
 
 
@@ -82,3 +84,6 @@ All Trainers Listing: The app also offers an "All Trainers" section, allowing us
 This GitHub repository showcases the code for the fitness app, making it a valuable resource for developers interested in creating similar fitness and trainer-related applications. Feel free to explore the code and adapt it to your specific project needs.
 
 For more detailed instructions and documentation, refer to the codebase and project files within the repository.
+<img width="318" alt="Screenshot 2023-10-24 at 10 11 24 PM" src="https://github.com/Redvey/flutter_ui_kit/assets/128305006/06faaad7-ffb5-401f-be4d-51a0e0740ead">
+<img width="318" alt="Screenshot 2023-10-24 at 10 11 18 PM" src="https://github.com/Redvey/flutter_ui_kit/assets/128305006/359bf151-8d69-4b03-a071-64f0eded862b">
+<img width="318" alt="Screenshot 2023-10-24 at 10 11 28 PM" src="https://github.com/Redvey/flutter_ui_kit/assets/128305006/af7afc3c-0a6d-4a09-b03f-e599c4fb772e">
