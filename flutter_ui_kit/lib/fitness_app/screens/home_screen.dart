@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/Categories%20scroll.dart';
-import 'package:flutter_ui_kit/fitness_app/consts/Pallete.dart';
+import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/categories_part.dart';
+import 'package:flutter_ui_kit/fitness_app/consts/pallete.dart';
 import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/all_trainers.dart';
-import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/navbar.dart';
+import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/nav_bar.dart';
 import 'package:flutter_ui_kit/fitness_app/home_screen_widgets/top_trainers.dart';
 import 'package:flutter_ui_kit/fitness_app/screens/toptrainer_page.dart';
 import 'package:google_fonts/google_fonts.dart';
