@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a28e8e3-e908-40be-adb5-8a3cd990ee0e" name="Changes" comment="#Hacktoberfest 2023&#10;9.Resolving conflicts by deleting .idea directory" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2X4vE1ufWohlixvIHzbVqRh7yT1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/redvey/StudioProjects/flutter_ui_kit/flutter_ui_kit/lib&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flutter_ui_kit/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flutter_ui_kit/lib/fitness_app/consts" />
+      <recent name="$PROJECT_DIR$/flutter_ui_kit/lib/fitness_app/Widgets" />
+      <recent name="$PROJECT_DIR$/flutter_ui_kit/lib/fitness_app/home_screen_widgets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.main.dart">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/flutter_ui_kit/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in widget_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/flutter_ui_kit/test/widget_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in widget_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a28e8e3-e908-40be-adb5-8a3cd990ee0e" name="Changes" comment="" />
+      <created>1697901050569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697901050569</updated>
+    </task>
+    <task id="LOCAL-00001" summary="#Hacktoberfest 2023&#10;1.Developing the UI of fitness app&#10;    *Added an appbar&#10;    *Added Horizontally scrollable Trainer schedule">
+      <created>1697902402423</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697902402423</updated>
+    </task>
+    <task id="LOCAL-00002" summary="#Hacktoberfest 2023">
+      <created>1697902432655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697902432655</updated>
+    </task>
+    <task id="LOCAL-00003" summary="#Hacktoberfest 2023&#10;3. Added a Bottom Nav bar with MDI Icons package.">
+      <created>1697903808520</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697903808520</updated>
+    </task>
+    <task id="LOCAL-00004" summary="#Hacktoberfest 2023&#10;4.Added a Scrollable categories option&#10;5.then created a wireframe for next task(Top Trainers)">
+      <created>1697908412508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697908412508</updated>
+    </task>
+    <task id="LOCAL-00005" summary="#Hacktoberfest 2023&#10;4.Creating buttons for Top Trainer and all trainers">
+      <created>1697963600125</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697963600125</updated>
+    </task>
+    <task id="LOCAL-00006" summary="#Hacktoberfest 2023&#10;5.Finished Home Screen for Fitness App">
+      <created>1698049756622</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698049756622</updated>
+    </task>
+    <task id="LOCAL-00007" summary="#Hacktoberfest 2023&#10;6.Finished Trainer tab's Page">
+      <created>1698058186299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698058186299</updated>
+    </task>
+    <task id="LOCAL-00008" summary="#Hacktoberfest 2023&#10;7.created wireframe for All Yoga Trainer">
+      <created>1698063418569</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063418569</updated>
+    </task>
+    <task id="LOCAL-00009" summary="#Hacktoberfest 2023&#10;7.created wireframe for All Yoga Trainer">
+      <created>1698064353510</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698064353510</updated>
+    </task>
+    <task id="LOCAL-00010" summary="#Hacktoberfest 2023&#10;7.made the Top trainer horizontal list(some changes are still left,will do  in an hour)">
+      <created>1698090801376</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698090801376</updated>
+    </task>
+    <task id="LOCAL-00011" summary="#Hacktoberfest 2023&#10;7.Did all the changes &#10;8.Finally App is completed according to the provided dribble link">
+      <created>1698164272691</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698164272691</updated>
+    </task>
+    <task id="LOCAL-00012" summary="#Hacktoberfest 2023&#10;9.Resolving conflicts by deleting .idea directory">
+      <created>1698222926440</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698222926440</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#Hacktoberfest 2023&#10;1.Developing the UI of fitness app&#10;    *Added an appbar&#10;    *Added Horizontally scrollable Trainer schedule" />
+    <MESSAGE value="#Hacktoberfest 2023" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;3. Added a Bottom Nav bar with MDI Icons package." />
+    <MESSAGE value="#Hacktoberfest 2023&#10;4.Added a Scrollable categories option&#10;5.then created a wireframe for next task(Top Trainers)" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;4.Creating buttons for Top Trainer and all trainers" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;5.Finished Home Screen for Fitness App" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;6.Finished Trainer tab's Page" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;7.created wireframe for All Yoga Trainer" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;7.made the Top trainer horizontal list(some changes are still left,will do  in an hour)" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;7.Did all the changes &#10;8.Finally App is completed according to the provided dribble link" />
+    <MESSAGE value="#Hacktoberfest 2023&#10;9.Resolving conflicts by deleting .idea directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="#Hacktoberfest 2023&#10;9.Resolving conflicts by deleting .idea directory" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/flutter_ui_kit/lib/fitness_app/screens/home_screen.dart</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/flutter_ui_kit/lib/fitness_app/screens/toptrainer_page.dart</url>
+          <line>116</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

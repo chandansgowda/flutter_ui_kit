@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_kit/coffee_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/crypto_app/screens/home_screen.dart';
+import 'package:flutter_ui_kit/fitness_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/furniture_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/finance_app/screens/home_screen.dart';
 import 'package:flutter_ui_kit/music_app/screens/music_app_home_screen.dart';
@@ -12,6 +13,7 @@ List<Map<String, String>> AppPaths = [
   {'name': "Furniture App", 'path': FurnitureAppHomeScreen.routeName},
   {'name':"Music App",'path':MusicAppHomeScreen.routeName},
   {'name':"Finance App",'path':FinanceAppHomeScreen.routeName},
+  {'name':"Fitness App",'path':FitnessApp.routeName},
 ];
 
 class HomeScreen extends StatelessWidget {
